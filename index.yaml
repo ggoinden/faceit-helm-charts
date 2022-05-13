@@ -44,6 +44,16 @@ entries:
   faceit-db:
   - apiVersion: v2
     appVersion: "1"
+    created: "2022-05-13T20:29:20.64657912Z"
+    description: Postgres DB
+    digest: 8717297a1cb6a8407fa67b4fb82f9817476fda5bdf5da3bc2cda26c4709bf16a
+    name: faceit-db
+    type: application
+    urls:
+    - https://github.com/ggoinden/faceit-helm-charts/releases/download/faceit-db-1.1/faceit-db-1.1.tgz
+    version: "1.1"
+  - apiVersion: v2
+    appVersion: "1"
     created: "2022-05-13T17:25:49.76779+01:00"
     description: Postgres DB
     digest: b78842e08770928231d379b99c07086335dcbbcd7e2aafb0d19fa42d41804524
