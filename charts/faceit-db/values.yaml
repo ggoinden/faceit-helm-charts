@@ -1,0 +1,10 @@
+image: postgres:13-alpine
+resources:
+  requests:
+    memory: 32Mi
+    cpu: 10m
+service:
+  type: ClusterIP
+  port: 5432
+  nodePorts:
+    http: ""
