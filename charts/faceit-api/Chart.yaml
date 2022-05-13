@@ -1,6 +1,6 @@
 apiVersion: v2
 name: faceit-api
-version: 1.2
+version: 1.2.1
 appVersion: 1.2
 description: API to ping Postgres DV
 type: application
