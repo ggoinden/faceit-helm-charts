@@ -1,0 +1,10 @@
+image: 973321221692.dkr.ecr.eu-west-1.amazonaws.com/faceit-api
+resources:
+  requests:
+    memory: 32Mi
+    cpu: 10m
+service:
+  type: ClusterIP
+  port: 8080
+  nodePorts:
+    http: ""
