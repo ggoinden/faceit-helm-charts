@@ -3,6 +3,16 @@ entries:
   faceit-api:
   - apiVersion: v2
     appVersion: "1.2"
+    created: "2022-05-13T18:24:37.48298227Z"
+    description: API to ping Postgres DV
+    digest: a5ada1a9c0100eb7d844173650fdf6b9cd8c6cb32f85efad406bc857eda436cd
+    name: faceit-api
+    type: application
+    urls:
+    - https://github.com/ggoinden/faceit-helm-charts/releases/download/faceit-api-1.2/faceit-api-1.2.tgz
+    version: "1.2"
+  - apiVersion: v2
+    appVersion: "1.2"
     created: "2022-05-13T18:16:54.471257822Z"
     description: API to ping Postgres DV
     digest: 8a6b46b0d08ed0940b1fc1b8e207197ae53003b6d4e70ff6e280792a06c1ba00
