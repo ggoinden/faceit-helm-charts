@@ -8,3 +8,4 @@ service:
   port: 8080
   nodePorts:
     http: ""
+env: test
