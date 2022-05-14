@@ -1,6 +1,6 @@
 apiVersion: v2
 name: faceit-db
-version: 1.1
+version: 1.2
 appVersion: 1.0
 description: Postgres DB
 type: application

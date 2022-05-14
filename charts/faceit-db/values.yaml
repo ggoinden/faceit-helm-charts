@@ -8,3 +8,5 @@ service:
   port: 5432
   nodePorts:
     http: ""
+environmentVariables:
+  POSTGRES_PASSWORD: mysecretpassword
