@@ -34,21 +34,14 @@ spec:
           envFrom:
             - configMapRef:
                 name: {{ printf "%s-%s-vars" .Release.Namespace .Chart.Name }}
-          livenessProbe:
-            httpGet:
-              path: /
-              port: http
-            initialDelaySeconds: 30
-            failureThreshold: 5
-            periodSeconds: 10
-            timeoutSeconds: 30
           readinessProbe:
-            httpGet:
-              path: /
-              port: http
+            tcpSocket:
+              port: 5432
             initialDelaySeconds: 5
             periodSeconds: 10
-            timeoutSeconds: 20
+          livenessProbe:
+            tcpSocket:
+              port: 5432
           resources:
             {{- toYaml .Values.resources | nindent 13 }}
 
