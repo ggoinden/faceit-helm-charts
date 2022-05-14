@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{printf "%s-%s-vars" .Release.Namespace .Chart.Name }}
+  namespace: {{ .Release.Namespace }}
+data:
+{{- range $key, $value :=  .Values.environmentVariables }}
+  {{ $key }}: {{ $value }}
+{{- end }}
+{{- end -}}
